@@ -9,5 +9,5 @@ pseudo code:
   <!-- save to local storage button -->
 <!-- changes color based on time of day  -->
   <!-- past hours grey -->
-  <!-- current hour blue -->
+  <!-- current hour red -->
   <!-- future hours green -->
