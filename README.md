@@ -1,7 +1,7 @@
 # Day-Planner
 
 pseudo code:
-<!-- display current date and time -->
+<!-- display current date -->
 
 <!-- insert time blocks -->
   <!-- contains the hour -->
