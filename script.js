@@ -97,3 +97,149 @@ function recall5(){
   document.getElementById("dsc5").innerHTML = localStorage.getItem("5PM")
 }
 recall5();
+
+//set color of each timeblock
+let currentHour = moment().hours();
+
+function colorHour9(){
+  if (currentHour === 9){
+    $("textarea#dsc9").addClass("present")
+  } else if (currentHour > 9){
+    $("textarea#dsc9").addClass("past")
+    $("textarea#dsc9").removeClass("present")
+  } else {
+    $("textarea#dsc9").addClass("future")
+    $("textarea#dsc9").removeClass("present")
+    $("textarea#dsc9").removeClass("past")
+  }
+}
+
+function colorHour10(){
+  if (currentHour === 10){
+    $("textarea#dsc10").addClass("present")
+  } else if (currentHour > 10){
+    $("textarea#dsc10").addClass("past")
+    $("textarea#dsc10").removeClass("present")
+  } else {
+    $("textarea#dsc10").addClass("future")
+    $("textarea#dsc10").removeClass("present")
+    $("textarea#dsc10").removeClass("past")
+  }
+}
+
+function colorHour11(){
+  if (currentHour === 11){
+    $("textarea#dsc11").addClass("present")
+  } else if (currentHour > 11){
+    $("textarea#dsc11").addClass("past")
+    $("textarea#dsc11").removeClass("present")
+  } else {
+    $("textarea#dsc11").addClass("future")
+    $("textarea#dsc11").removeClass("present")
+    $("textarea#dsc11").removeClass("past")
+  }
+}
+
+function colorHour12(){
+  if (currentHour === 12){
+    $("textarea#dsc12").addClass("present")
+  } else if (currentHour > 12){
+    $("textarea#dsc12").addClass("past")
+    $("textarea#dsc12").removeClass("present")
+  } else {
+    $("textarea#dsc12").addClass("future")
+    $("textarea#dsc12").removeClass("present")
+    $("textarea#dsc12").removeClass("past")
+  }
+}
+
+function colorHour1(){
+  if (currentHour === 13){
+    $("textarea#dsc1").addClass("present")
+  } else if (currentHour > 13){
+    $("textarea#dsc1").addClass("past")
+    $("textarea#dsc1").removeClass("present")
+  } else {
+    $("textarea#dsc1").addClass("future")
+    $("textarea#dsc1").removeClass("present")
+    $("textarea#dsc1").removeClass("past")
+  }
+}
+
+function colorHour2(){
+  if (currentHour === 14){
+    $("textarea#dsc2").addClass("present")
+  } else if (currentHour > 14){
+    $("textarea#dsc2").addClass("past")
+    $("textarea#dsc2").removeClass("present")
+  } else {
+    $("textarea#dsc2").addClass("future")
+    $("textarea#dsc2").removeClass("present")
+    $("textarea#dsc2").removeClass("past")
+  }
+}
+
+function colorHour3(){
+  if (currentHour === 15){
+    $("textarea#dsc3").addClass("present")
+  } else if (currentHour > 15){
+    $("textarea#dsc3").addClass("past")
+    $("textarea#dsc3").removeClass("present")
+  } else {
+    $("textarea#dsc3").addClass("future")
+    $("textarea#dsc3").removeClass("present")
+    $("textarea#dsc3").removeClass("past")
+  }
+}
+
+function colorHour4(){
+  if (currentHour === 16){
+    $("textarea#dsc4").addClass("present")
+  } else if (currentHour > 16){
+    $("textarea#dsc4").addClass("past")
+    $("textarea#dsc4").removeClass("present")
+  } else {
+    $("textarea#dsc4").addClass("future")
+    $("textarea#dsc4").removeClass("present")
+    $("textarea#dsc4").removeClass("past")
+  }
+}
+
+function colorHour5(){
+  if (currentHour === 17){
+    $("textarea#dsc5").addClass("present")
+  } else if (currentHour > 17){
+    $("textarea#dsc5").addClass("past")
+    $("textarea#dsc5").removeClass("present")
+  } else {
+    $("textarea#dsc5").addClass("future")
+    $("textarea#dsc5").removeClass("present")
+    $("textarea#dsc5").removeClass("past")
+  }
+}
+
+colorHour9();
+colorHour10();
+colorHour11();
+colorHour12();
+colorHour1();
+colorHour2();
+colorHour3();
+colorHour4();
+colorHour5();
+
+function checkHour(){
+  colorHour9();
+  colorHour10();
+  colorHour11();
+  colorHour12();
+  colorHour1();
+  colorHour2();
+  colorHour3();
+  colorHour4();
+  colorHour5();
+}
+setInterval(checkHour, 1000);
+
+
+
