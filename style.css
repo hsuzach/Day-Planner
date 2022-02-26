@@ -72,3 +72,7 @@ textarea {
   font-size: 26px;
   transition: all .3s ease-in-out;
 }
+
+#message{
+  font-size: larger;
+}
